@@ -16,7 +16,7 @@ export default function Home() {
     <main className="relative">
       {/* navbar */}
       <Nav/>
-      <section className="xl:padding-l wide:padding-r padding-b ">
+      <section className="xl:padding-l padding-b mx-container">
         <Hero />
       </section>
       <section className="padding">
