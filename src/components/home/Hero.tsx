@@ -36,12 +36,13 @@ const Hero = () => {
         </div>
         {/* shoe image */}
         <div className='relative w-full flex-1 flex justify-center items-center bg-primary xl:min-h-screen bg-hero bg-cover bg-center max-xl:py-40'>
-          <Image src={bigShoe1} alt='Big Shoe' width={610} height={500} className='object-contain relative z-10'/>
+          <Image src={bigShoeImg} alt='Big Shoe' width={610} height={500} className='object-contain relative z-10'/>
           <div className='flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6'>
             {
               shoes.map(shoe=>(
                 <div key={shoe.id}>
-                  <ShoeCard imgUrl={shoe} changeBigShoeImage={(shoe)=> setBigShoeImg(shoe)} bigShoeImage={bigShoe1}/>
+                  <ShoeCard imgUrl={shoe} changeBigShoeImage={(shoe)=> setBigShoeImg(shoe)} 
+                  bigShoeImage={bigShoeImg}/>
                 </div>
               ))
             }
