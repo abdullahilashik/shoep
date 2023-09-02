@@ -24,8 +24,15 @@ const Nav = () => {
                     }
             </ul>
             {/* mobile menu */}
-            <div className='block lg:hidden'>
+            <div className='block lg:hidden group relative'>
                 <Image src={hamburger} alt='Hamburger' height={30} width={30}/>
+                <div className="flex flex-col px-8 py-4 w-80 h-80 bg-gray-100 absolute right-0 rounded top-full opacity-0 group-hover:opacity-100 -z-10">
+                    <a className='font-bold  font-montserrat py-4 hover:bg-gradient-to-br from-cyan-200 to-violet-200 px-4 rounded' href="#">Home</a>
+                    <a className='font-bold  font-montserrat py-4 hover:bg-gradient-to-br from-cyan-200 to-violet-200 px-4 rounded' href="#">Services</a>
+                    <a className='font-bold  font-montserrat py-4 hover:bg-gradient-to-br from-cyan-200 to-violet-200 px-4 rounded' href="#">Gallery</a>
+                    <a className='font-bold  font-montserrat py-4 hover:bg-gradient-to-br from-cyan-200 to-violet-200 px-4 rounded' href="#">Shop</a>
+                    <a className='font-bold  font-montserrat py-4 hover:bg-gradient-to-br from-cyan-200 to-violet-200 px-4 rounded' href="#">Contact</a>
+                </div>
             </div>
         </nav>
     </header>
